@@ -25,3 +25,9 @@ head h1{
 .facts-page{
     background-color:lightpink
 }
+.facts-content-div{
+    margin-left: 10%;
+}
+.facts-content-div li{
+    font-size: large;
+}
