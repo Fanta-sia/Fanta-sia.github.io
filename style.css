@@ -7,5 +7,8 @@
 }
 .home-content-div{
     text-align:center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Light'
+}
+body{
+    font-family: "Franklin Gothic Light"
 }
