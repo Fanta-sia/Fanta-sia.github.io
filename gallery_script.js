@@ -9,3 +9,9 @@ const prevButton = document.getElementById("prev-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentImgIndex = 0;
+
+function updateImage() {
+    imageElement.src = imageGallery[currentImgIndex];
+}
+nextButton.addEventListener
+updateImage();
