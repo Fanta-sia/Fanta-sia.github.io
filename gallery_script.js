@@ -13,5 +13,14 @@ let currentImgIndex = 0;
 function updateImage() {
     imageElement.src = imageGallery[currentImgIndex];
 }
-nextButton.addEventListener
+nextButton.addEventListener("click", function(){
+    currentImgIndex=(currentImgIndex + 1) % imageGallery.length
+    updateImage()
+});
+
+prevButton.addEventListener("click", function(){
+    currentImgIndex = {currentImgIndex -1 + imageGallery.length} %
+    imageGallery.length
+    updateImage{}
+})
 updateImage();
