@@ -1,15 +1,14 @@
 const imageGallery = [
-    "https://unsplash.com/photos/buildings-and-body-of-water-WHHY-iBp3aI",
-    "https://unsplash.com/photos/skyline-photography-of-boat-passing-on-waters-overlooking-buildings-2yN10KHNTzM",
-    "https://unsplash.com/photos/three-brown-wooden-boat-on-blue-lake-water-taken-at-daytime-T7K4aEPoGGk",
-    "https://unsplash.com/photos/pathway-in-forest-with-yellow-sunlight-F7HGqkkMYAU"
+    "https://images.pexels.com/photos/2382868/pexels-photo-2382868.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "https://images.pexels.com/photos/2416602/pexels-photo-2416602.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "https://images.pexels.com/photos/2782485/pexels-photo-2782485.jpeg?auto=compress&cs=tinysrgb&w=1200"
 ]
 const imageElement = document.getElementById("gallery-image");
 const prevButton = document.getElementById("prev-btn");
 const nextButton = document.getElementById("next-btn");
 
 let currentImgIndex = 0;
-
+imageElement.src = imageGallery[currentImgIndex];
 function updateImage() {
     imageElement.src = imageGallery[currentImgIndex];
 }
@@ -19,8 +18,8 @@ nextButton.addEventListener("click", function(){
 });
 
 prevButton.addEventListener("click", function(){
-    currentImgIndex = {currentImgIndex -1 + imageGallery.length} %
+    currentImgIndex = (currentImgIndex -1 + imageGallery.length) %
     imageGallery.length
-    updateImage{}
-})
+    updateImage()
+});
 updateImage();
